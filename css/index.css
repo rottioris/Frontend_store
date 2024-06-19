@@ -1,10 +1,34 @@
 :root {
   /*Colors*/
-  --bg-color: #000;
-  --bg-color-var: rgb(44, 44, 44);
+  --bg-color: #ffffff;
+  --bg-footer: #687da8;
+  
+  /*Panels #1*/
+  --bg-p-x1: #bf7eff;
+  --bg-p-x2: #febf8b;
+  --bg-p-x3: #dfacd5;
+  --bg-p-x4: #cbe7ee;
+  --bg-p-x5: #e4c8ff;
+  --bg-p-x6: #ff7e7e;
+  --bg-p-x7: #a3c7e2;
+
+  /*Panels #2*/
+  --bg-big-p-x1: #f1c2ec;
+  --bg-big-p-xx2: #1e1e1e;
+
+  /*Panels #3*/
+  --bg-p-end-x1: #e8fbff;
+  --bg-p-end-x2: #ffecfd;
+
   /*Buttons/Hovers*/
-  --button-color: #000;
-  --button-h-color: #fff;
+  --button-color-x1: #000;
+  --button-h-color-x1: #fff;
+  --button-color-x2: #fff;
+  --button-h-color-x2: #000;
+  --text-color-button: #fff;
+  --text-color-button: #000;
+
+  --text-color: #fff;
 
   /*Fonts*/
   --p-font: "Staatliches", cursive;
