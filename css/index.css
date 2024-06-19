@@ -1,4 +1,25 @@
 :root {
-    --bg-color: #000;
-    --bg-color-var: rgb(44, 44, 44);
+  /*Colors*/
+  --bg-color: #000;
+  --bg-color-var: rgb(44, 44, 44);
+  /*Buttons/Hovers*/
+  --button-color: #000;
+  --button-h-color: #fff;
+
+  /*Fonts*/
+  --p-font: "Staatliches", cursive;
 }
+/* apply a natural box layout model to all elements, but allowing the components to change, also applied the size from rem to px */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 16px; /* 1 rem = 10px */
+}
+/* Custom */
