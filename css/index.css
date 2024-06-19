@@ -2,7 +2,9 @@
   /*Colors*/
   --bg-color: #ffffff;
   --bg-footer: #687da8;
-  
+
+  --bg-nav: #b98fb3;
+
   /*Panels #1*/
   --bg-p-x1: #bf7eff;
   --bg-p-x2: #febf8b;
@@ -28,16 +30,18 @@
   --text-color-button: #fff;
   --text-color-button: #000;
 
-  --text-color: #fff;
+  --text-color-x1: #fff;
+  --texct-color-x2:#000;
 
   /*Fonts*/
-  --p-font: "Staatliches", cursive;
+  --p-font: "Inter", sans-serif;
 }
 /* GLobal */
 /* apply a natural box layout model to all elements, but allowing the components to change, also applied the size from rem to px */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: "Inter", sans-serif;
 }
 *,
 *:before,
@@ -59,7 +63,7 @@ a {
   text-decoration: none;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 .container {
   max-width: 120rem;
@@ -82,3 +86,37 @@ h3 {
   font-size: 2.4rem;
 }
 /* uwu */
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 20px;
+}
+/* Header logo*/
+.header__logo {
+  height: 20px;
+  opacity: 0%;
+}
+/* Header Nav */
+.header__nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: var(--text-color-x1);
+  padding: 0 10px;
+  font-weight: 450;
+}
+
+.section__hero {
+  background-image: url(/img/hero_.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 653px;
+  overflow: hidden;
+}
