@@ -31,7 +31,7 @@
   --text-color-button: #000;
 
   --text-color-x1: #fff;
-  --texct-color-x2:#000;
+  --texct-color-x2: #000;
 
   /*Fonts*/
   --p-font: "Inter", sans-serif;
@@ -93,13 +93,15 @@ h3 {
   align-items: center;
   padding: 1px 20px;
 }
-/* Header logo*/
+/* Header logo
 .header__logo {
   height: 20px;
   opacity: 0%;
 }
+/
 /* Header Nav */
 .header__nav {
+  padding-top: 20px;
   flex-grow: 1;
   text-align: center;
 }
