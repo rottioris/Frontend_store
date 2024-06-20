@@ -32,6 +32,7 @@
 
   --text-color-x1: #fff;
   --texct-color-x2: #000;
+  --text-color-x3: #6b4b7c;
 
   /*Fonts*/
   --p-font: "Inter", sans-serif;
@@ -112,7 +113,12 @@ h3 {
   padding: 0 10px;
   font-weight: 450;
 }
+.nav__a--c,
+.nav__a:hover {
+  color: var(--text-color-x3);
+}
 
+/* Header Hero*/
 .section__hero {
   background-image: url(/img/hero_.jpg);
   background-repeat: no-repeat;
