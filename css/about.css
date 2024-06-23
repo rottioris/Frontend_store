@@ -74,7 +74,7 @@ h1,
 h2,
 h3 {
   text-align: center;
-  color: var(--bg-color);
+  color: var(--bg-big-p-xx2);
   font-family: var(--p-font);
 }
 h1 {
@@ -143,6 +143,38 @@ h3 {
   .about__img {
     grid-column: 2 / 3;
   }
+}
+
+/* blocks */
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+}
+
+@media (min-width: 768px) {
+  .blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  
+  }    
+}
+
+
+
+.block{
+text-align: center;
+}
+
+.block__img {
+  width: 100%;
+
+}
+
+.block__h3 {
+  margin: 0;
 }
 
 /* Footer */
