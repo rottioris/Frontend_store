@@ -1,138 +1,159 @@
 :root {
-    /*Colors*/
-    --bg-color: #ffffff;
-    --bg-footer: #687da8;
-  
-    --bg-nav: #b98fb3;
-  
-    /*Panels #1*/
-    --bg-p-x1: #bf7eff;
-    --bg-p-x2: #febf8b;
-    --bg-p-x3: #dfacd5;
-    --bg-p-x4: #cbe7ee;
-    --bg-p-x5: #e4c8ff;
-    --bg-p-x6: #ff7e7e;
-    --bg-p-x7: #a3c7e2;
-  
-    /*Panels #2*/
-    --bg-big-p-x1: #f1c2ec;
-    --bg-big-p-xx2: #1e1e1e;
-  
-    /*Panels #3*/
-    --bg-p-end-x1: #e8fbff;
-    --bg-p-end-x2: #ffecfd;
-  
-    /*Buttons/Hovers*/
-    --button-color-x1: #000;
-    --button-h-color-x1: #fff;
-    --button-color-x2: #fff;
-    --button-h-color-x2: #000;
-    --text-color-button: #fff;
-    --text-color-button: #000;
-  
-    --text-color-x1: #fff;
-    --texct-color-x2: #000;
-    --text-color-x3: #6b4b7c;
-  
-    /*Fonts*/
-    --p-font: "Inter", sans-serif;
-  }
-  /* GLobal */
-  /* apply a natural box layout model to all elements, but allowing the components to change, also applied the size from rem to px */
-  html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    font-family: "Inter", sans-serif;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  /* Custom HTML */
-  body {
-    font-size: 1.6rem; /* 1 rem = 10px */
-    background-color: var(--bg-color);
-    line-height: 1.5;
-  }
-  p {
-    font-size: 1.8rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--bg-color);
-  }
-  a {
-    text-decoration: none;
-  }
-  img {
-    max-width: 100%;
-  }
-  .container {
-    max-width: 120rem;
-    margin: 0 auto;
-  }
-  h1,
-  h2,
-  h3 {
-    text-align: center;
-    color: var(--bg-color);
-    font-family: var(--p-font);
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 3.2rem;
-  }
-  h3 {
-    font-size: 2.4rem;
-  }
-  /* uwu */
-  /* Header */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1px 20px;
-    background-color: var(--bg-big-p-x1);
-  }
-  /* Header logo
+  /*Colors*/
+  --bg-color: #ffffff;
+  --bg-footer: #687da8;
+
+  --bg-nav: #b98fb3;
+
+  /*Panels #1*/
+  --bg-p-x1: #bf7eff;
+  --bg-p-x2: #febf8b;
+  --bg-p-x3: #dfacd5;
+  --bg-p-x4: #cbe7ee;
+  --bg-p-x5: #e4c8ff;
+  --bg-p-x6: #ff7e7e;
+  --bg-p-x7: #a3c7e2;
+
+  /*Panels #2*/
+  --bg-big-p-x1: #f1c2ec;
+  --bg-big-p-xx2: #1e1e1e;
+
+  /*Panels #3*/
+  --bg-p-end-x1: #e8fbff;
+  --bg-p-end-x2: #ffecfd;
+
+  /*Buttons/Hovers*/
+  --button-color-x1: #000;
+  --button-h-color-x1: #fff;
+  --button-color-x2: #fff;
+  --button-h-color-x2: #000;
+  --text-color-button: #fff;
+  --text-color-button: #000;
+
+  --text-color-x1: #fff;
+  --texct-color-x2: #000;
+  --text-color-x3: #6b4b7c;
+
+  /*Fonts*/
+  --p-font: "Inter", sans-serif;
+}
+/* GLobal */
+/* apply a natural box layout model to all elements, but allowing the components to change, also applied the size from rem to px */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Custom HTML */
+body {
+  font-size: 1.6rem; /* 1 rem = 10px */
+  background-color: var(--bg-color);
+  line-height: 1.5;
+}
+p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--bg-big-p-xx2);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--bg-color);
+  font-family: var(--p-font);
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+/* uwu */
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 20px;
+  background-color: var(--bg-big-p-x1);
+}
+/* Header logo
   .header__logo {
     height: 20px;
     opacity: 0%;
   }
   /
   /* Header Nav */
-  .header__nav {
-    padding-top: 20px;
-    flex-grow: 1;
-    text-align: center;
-  }
-  
-  .header__nav a {
-    text-decoration: none;
-    color: var(--text-color-x1);
-    padding: 0 10px;
-    font-weight: 450;
-  }
-  
-  .header__nav .nav__a--c,
-  .header__nav .nav__a:hover{
-    color: var(--text-color-x3);
-  }
-  
-  /* Header Hero*/
+.header__nav {
+  padding-top: 20px;
+  flex-grow: 1;
+  text-align: center;
+}
 
-  
-  
-  /* Footer */
-  
-  .footer{
-    background-color: var(--bg-footer);
-    padding: 1rem 0;
-    margin-top: 2rem;
+.header__nav a {
+  text-decoration: none;
+  color: var(--text-color-x1);
+  padding: 0 10px;
+  font-weight: 450;
+}
+
+.header__nav .nav__a--c,
+.header__nav .nav__a:hover {
+  color: var(--text-color-x3);
+}
+
+/* Abaut Hero*/
+
+.about {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+  .about {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
   }
-  
-  .footer__p{
+}
+
+.about__img {
+  grid-row: 1 / 2;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .about__img {
+    grid-column: 2 / 3;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--bg-footer);
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer__p {
   font-family: var(--p-font);
   text-align: left;
   word-wrap: break-word;
@@ -141,5 +162,4 @@
   width: 400px;
   margin: 10px;
   border: 1px solid #ccc;
-  }
-  
+}
