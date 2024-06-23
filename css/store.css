@@ -58,7 +58,7 @@
   p {
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--bg-color);
+    color: var(--bg-big-p-xx2);
   }
   a {
     text-decoration: none;
@@ -74,7 +74,7 @@
   h2,
   h3 {
     text-align: center;
-    color: var(--bg-color);
+    color: var(--bg-big-p-xx2);
     font-family: var(--p-font);
   }
   h1 {
