@@ -94,12 +94,7 @@ h3 {
   align-items: center;
   padding: 1px 20px;
 }
-/* Header logo
-.header__logo {
-  height: 20px;
-  opacity: 0%;
-}
-/
+
 /* Header Nav */
 .header__nav {
   padding-top: 20px;
@@ -149,7 +144,7 @@ h3 {
   border: 1px solid #ccc;
 }
 
-.footer__svg{
+.footer__svg {
   max-width: 30px;
 }
 /* Main p*/
@@ -188,6 +183,7 @@ h3 {
 }
 .product__name {
   font-size: 4rem;
+  font-weight: 400;
 }
 
 .product__name,
@@ -199,28 +195,32 @@ h3 {
 }
 /*graphic*/
 
-.graphic{
+.graphic {
   min-height: 30rem;
   background-repeat: no-repeat;
   background-size: cover;
-  grid-column: 1/ 3 ;
+  grid-column: 1/ 3;
 }
 
-.graphic--chr1{
+.graphic--chr1 {
   grid-row: 1 / 2;
   background-color: var(--bg-p-x1);
   background-image: url(../img/Characters/Two_Char2.png);
+  background-size: 50rem 50rem;
 }
 
 .graphic--chr2 {
   background-color: var(--bg-p-x7);
   background-image: url(../img/Characters/Two_Char3.png);
   grid-row: 3 / 4;
+  background-size: 44rem 44rem;
 }
 
 @media (min-width: 768px) {
-  .graphic--chr2{
-    grid-row: 2 / 3 ;
-    grid-column: 2 / 4 ;
-    }
+  .graphic--chr2 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+  }
 }
+
+/* END INDEX*/
