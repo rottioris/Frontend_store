@@ -193,6 +193,16 @@ h3 {
   text-align: center;
   line-height: 1.2;
 }
+
+.product__title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.product__p{
+  font-family:"Inter", sans-serif;
+  font-weight: 300;
+}
 /*graphic*/
 
 .graphic {
