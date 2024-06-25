@@ -148,6 +148,10 @@ h3 {
   margin: 10px;
   border: 1px solid #ccc;
 }
+
+.footer__svg{
+  max-width: 30px;
+}
 /* Main p*/
 
 .main__p {
@@ -157,7 +161,7 @@ h3 {
 /* Grid*/
 
 .grid {
-  margin: 1rem 2rem;
+  margin: 1rem 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1rem;
@@ -205,12 +209,12 @@ h3 {
 .graphic--chr1{
   grid-row: 1 / 2;
   background-color: var(--bg-p-x1);
-  background-image: url(/img/Default_Full_gril_3.png);
+  background-image: url(../img/Characters/Two_Char2.png);
 }
 
 .graphic--chr2 {
   background-color: var(--bg-p-x7);
-  background-image: url(/img/Default_Full_gril.png);
+  background-image: url(../img/Characters/Two_Char3.png);
   grid-row: 3 / 4;
 }
 
