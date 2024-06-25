@@ -137,12 +137,21 @@ h3 {
 .about__img {
   grid-row: 1 / 2;
   width: 100%;
+  
 }
+
+
 
 @media (min-width: 768px) {
   .about__img {
     grid-column: 2 / 3;
   }
+}
+
+/* h2 */
+
+.purchase_h2{
+  margin-bottom: 5rem;
 }
 
 /* blocks */
@@ -169,7 +178,7 @@ text-align: center;
 }
 
 .block__img {
-  width: 100%;
+  width: 50%;
 
 }
 
