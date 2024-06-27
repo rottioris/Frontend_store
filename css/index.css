@@ -37,8 +37,10 @@
   /*Fonts*/
   --p-font: "Inter", sans-serif;
 }
+
 /* GLobal */
 /* apply a natural box layout model to all elements, but allowing the components to change, also applied the size from rem to px */
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -49,6 +51,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 /* Custom HTML */
 body {
   font-size: 1.6rem; /* 1 rem = 10px */
@@ -115,6 +118,7 @@ h3 {
 }
 
 /* Header Hero*/
+
 .section__hero {
   background-image: url(/img/hero_.jpg);
   background-repeat: no-repeat;
@@ -131,6 +135,7 @@ h3 {
   color: var(--bg-big-p-xx2);
   text-align: center;
 }
+
 /* Grid*/
 
 .grid {
@@ -146,6 +151,7 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 /* product's */
 
 .product {
@@ -181,6 +187,7 @@ h3 {
   font-family: "Inter", sans-serif;
   font-weight: 300;
 }
+
 /*graphic*/
 
 .graphic {
@@ -204,7 +211,7 @@ h3 {
   background-size: 44rem 44rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
   .graphic--chr2 {
     grid-row: 2 / 3;
     grid-column: 2 / 4;
@@ -246,6 +253,30 @@ h3 {
 .section__cont {
   background-color: var(--bg-color);
 }
-/* End INDEX*/
 
 /* Store */
+
+.header__nav_store {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header__nav_store a {
+  text-decoration: none;
+  color: var(--text-color-x1);
+  padding: 0 10px;
+  font-weight: 450;
+}
+
+.header__nav_store .nav__a--c2,
+.header__nav_store .nav__a1:hover {
+  color: var(--text-color-x3);
+}
+
+
+/* inicio store*/
+
+
+/* inicio about*/
