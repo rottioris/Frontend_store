@@ -134,7 +134,6 @@ h3 {
 /* Grid*/
 
 .grid {
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1rem;
@@ -178,8 +177,8 @@ h3 {
   font-weight: bold;
 }
 
-.product__p{
-  font-family:"Inter", sans-serif;
+.product__p {
+  font-family: "Inter", sans-serif;
   font-weight: 300;
 }
 /*graphic*/
@@ -233,6 +232,19 @@ h3 {
 
 .footer__svg {
   max-width: 30px;
+}
+
+.section__grid {
+  background-color: var(--bg-big-p-x1);
+}
+
+.section__cont h2 {
+  color: var(--bg-big-p-xx2);
+  text-transform: uppercase;
+}
+
+.section__cont {
+  background-color: var(--bg-color);
 }
 
 /* END INDEX*/
