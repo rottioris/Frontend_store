@@ -1,11 +1,10 @@
 :root {
-  /*Colors*/
+  /* Colors */
   --bg-color: #ffffff;
   --bg-footer: #687da8;
-
   --bg-nav: #b98fb3;
 
-  /*Panels #1*/
+  /* Panels #1 */
   --bg-p-x1: #bf7eff;
   --bg-p-x2: #febf8b;
   --bg-p-x3: #dfacd5;
@@ -14,15 +13,15 @@
   --bg-p-x6: #ff7e7e;
   --bg-p-x7: #a3c7e2;
 
-  /*Panels #2*/
+  /* Panels #2 */
   --bg-big-p-x1: #f1c2ec;
   --bg-big-p-xx2: #1e1e1e;
 
-  /*Panels #3*/
+  /* Panels #3 */
   --bg-p-end-x1: #e8fbff;
   --bg-p-end-x2: #ffecfd;
 
-  /*Buttons/Hovers*/
+  /* Buttons/Hovers */
   --button-color-x1: #000;
   --button-h-color-x1: #fff;
   --button-color-x2: #fff;
@@ -34,13 +33,13 @@
   --texct-color-x2: #000;
   --text-color-x3: #6b4b7c;
 
-  /*Fonts*/
+  /* Fonts */
   --p-font: "Inter", sans-serif;
 }
 
-/* GLobal */
-/* apply a natural box layout model to all elements, but allowing the components to change, also applied the size from rem to px */
+/* Global Styles */
 
+/* Apply a natural box layout model to all elements, with font-size adjusted to 62.5% for rem-to-px conversion */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -52,27 +51,37 @@ html {
   box-sizing: inherit;
 }
 
-/* Custom HTML */
+/* Body Style */
 body {
   font-size: 1.6rem; /* 1 rem = 10px */
   background-color: var(--bg-color);
   line-height: 1.5;
 }
+
+/* Paragraph Style */
 p {
   font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--bg-color);
 }
+
+/* Anchor Tag Style */
 a {
   text-decoration: none;
 }
+
+/* Image Style */
 img {
   width: 100%;
 }
+
+/* Container Class */
 .container {
   max-width: 120rem;
   margin: 0 auto;
 }
+
+/* Heading Styles */
 h1,
 h2,
 h3 {
@@ -89,7 +98,7 @@ h2 {
 h3 {
   font-size: 2.4rem;
 }
-/* uwu */
+
 /* Header */
 .header {
   display: flex;
@@ -98,7 +107,7 @@ h3 {
   padding: 1px 20px;
 }
 
-/* Header Nav */
+/* Header Navigation */
 .header__nav {
   padding-top: 20px;
   flex-grow: 1;
@@ -117,8 +126,7 @@ h3 {
   color: var(--text-color-x3);
 }
 
-/* Header Hero*/
-
+/* Hero Section */
 .section__hero {
   background-image: url(/img/hero_.jpg);
   background-repeat: no-repeat;
@@ -129,15 +137,13 @@ h3 {
   overflow: hidden;
 }
 
-/* Main p*/
-
+/* Main Paragraph Style */
 .main__p {
   color: var(--bg-big-p-xx2);
   text-align: center;
 }
 
-/* Grid*/
-
+/* Grid Layout */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -152,8 +158,7 @@ h3 {
   }
 }
 
-/* product's */
-
+/* Product Styles */
 .product {
   background-color: var(--bg-p-x1);
 }
@@ -181,15 +186,27 @@ h3 {
 .product__title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
+  padding-left: 350px;
+}
+
+.form__submit {
+  border: none; /* Quitar el borde */
+  border-radius: 5px; /* Contorno redondeado, ajusta el valor según lo necesario */
+  padding: 10px 20px; /* Ajustar el relleno para mejor apariencia */
+  color: rgb(0, 0, 0); /* Cambiar el color del texto si es necesario */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  margin-left: 400px;
 }
 
 .product__p {
   font-family: "Inter", sans-serif;
   font-weight: 300;
+  margin: 20px; /* Margen alrededor del contenedor */
+  padding-left: 350px; /* Espacio dentro del contenedor */
+  text-align: left; /* Alineación del texto */
 }
 
-/*graphic*/
-
+/* Graphic Styles */
 .graphic {
   min-height: 30rem;
   background-repeat: no-repeat;
@@ -201,7 +218,7 @@ h3 {
   grid-row: 1 / 2;
   background-color: var(--bg-p-x1);
   background-image: url(../img/Characters/Two_Char5.png);
-  background-size: 50rem 50rem;
+  background-size: 40rem 40rem;
 }
 
 .graphic--chr2 {
@@ -211,7 +228,7 @@ h3 {
   background-size: 44rem 44rem;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .graphic--chr2 {
     grid-row: 2 / 3;
     grid-column: 2 / 4;
@@ -219,7 +236,6 @@ h3 {
 }
 
 /* Footer */
-
 .footer {
   background-color: var(--bg-footer);
   padding: 1rem 0;
@@ -241,12 +257,9 @@ h3 {
   max-width: 30px;
 }
 
-.section__grid {
-  background-color: var(--bg-big-p-x1);
-}
+/* Section Grid */
 
 .section__cont h2 {
-  color: var(--bg-big-p-xx2);
   text-transform: uppercase;
 }
 
@@ -254,8 +267,7 @@ h3 {
   background-color: var(--bg-color);
 }
 
-/* Store */
-
+/* Store Navigation */
 .header__nav_store {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -275,8 +287,46 @@ h3 {
   color: var(--text-color-x3);
 }
 
+/*section*/
 
-/* inicio store*/
+.section {
+  background-color: #efb3ff; /* Color de fondo para el contenedor principal */
+  padding: 20px;
+}
+
+.section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+}
+
+.section__cont {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  align-content: center;
+}
+
+.form__submit {
+  border: none; /* Quitar el borde */
+  border-radius: 5px; /* Contorno redondeado */
+  padding: 10px 20px; /* Ajustar el relleno */
+  background-color: #fff; /* Cambiar el color de fondo */
+  color: #333; /* Cambiar el color del texto */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  margin-left: 0px; /* Ajuste de margen */
+}
+
+.section__div {
+  display: flex;
+  align-items: center;
+}
+
+.section__img {
+  max-width: 60%;
+  background-color: white;
+}
 
 
-/* inicio about*/
+/* Start of store section */
+/* Start of about section */

@@ -3,18 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Google Fonts preconnect and stylesheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- CSS normalization for consistent styling across browsers -->
     <link
       rel="preload"
       href="/css/normalize.css"
@@ -22,6 +20,8 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript><link rel="stylesheet" href="/css/normalize.css" /></noscript>
+    
+    <!-- Main stylesheet -->
     <link
       rel="preload"
       href="/css/index.css"
@@ -29,15 +29,20 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript><link rel="stylesheet" href="/css/index.css" /></noscript>
+    
     <title>Frontend Store</title>
   </head>
   <body>
+    <!-- Hero section -->
     <section class="section__hero">
       <header class="header">
+        <!-- Header logo (commented out) -->
         <!--
-          <a href="index.html">
-            <img src="/img/logo-rottioris.png" class="header__logo" alt="rottioris" />
-          </a>-->
+        <a href="index.html">
+          <img src="/img/logo-rottioris.png" class="header__logo" alt="rottioris" />
+        </a>-->
+        
+        <!-- Navigation menu -->
         <nav class="header__nav">
           <a class="nav__a nav__a--c" href="#">Home</a>
           <a class="nav__a" href="#">Store</a>
@@ -45,29 +50,28 @@
         </nav>
       </header>
     </section>
-    <!-- Header end-->
-    <!-- Nav end-->
+    <!-- End of hero section -->
+
     <main>
+      <!-- Main introductory paragraph -->
       <p class="main__p">
         Impedit quidem vel ipsam voluptatum dolore, accusantium itaque.
       </p>
 
+      <!-- Products grid -->
       <div class="grid">
-        <!-- Product's-->
+        <!-- Product 1 -->
         <div class="product">
           <a href="/store.html">
             <div class="product__inf">
               <p class="product__price"><sup>US$</sup>24.<sup>00</sup></p>
               <p class="product__name">Women's Casual</p>
             </div>
-            <img
-              class="product__img"
-              src="/img/clothes"
-              alt="img1"
-            />
+            <img class="product__img" src="/img/clothes" alt="img1" />
           </a>
         </div>
-        <!-- Product's-->
+        
+        <!-- Product 2 -->
         <div class="product">
           <a href="/store.html">
             <div class="product__inf">
@@ -77,21 +81,19 @@
             <img class="product__img" src="/img/clothes" alt="img2" />
           </a>
         </div>
-        <!-- Product's-->
+        
+        <!-- Product 3 -->
         <div class="product">
           <a href="/store.html">
-            <img
-              class="product__img"
-              src="/img/Characters/char_2.png"
-              alt="img3"
-            />
+            <img class="product__img" src="/img/Characters/char_2.png" alt="img3" />
             <div class="product__inf">
               <p class="product__price"><sup>US$</sup>33.<sup>99</sup></p>
               <p class="product__name">Womens Summer</p>
             </div>
           </a>
         </div>
-        <!-- Product's-->
+        
+        <!-- Product 4 -->
         <div class="product">
           <a href="/store.html">
             <div class="product__inf">
@@ -101,71 +103,83 @@
             </div>
           </a>
         </div>
-        <!-- Product's-->
+        
+        <!-- Product 5 -->
         <div class="product">
           <a href="/store.html">
-            <img
-              class="product__img"
-              src="/img/Characters/char_19.png"
-              alt="img5"
-            />
+            <img class="product__img" src="/img/Characters/char_19.png" alt="img5" />
             <div class="product__inf">
               <p class="product__price"><sup>US$</sup>18.<sup>99</sup></p>
               <p class="product__name">Product 5</p>
             </div>
           </a>
         </div>
-        <!-- Product's-->
+
+        <!-- Graphic section 1 -->
         <div class="graphic graphic--chr1">
-          <h2 class="product__title "">Lorem title</h2>
+          <h2 class="product__title">Lorem title</h2>
           <p class="product__p">
-            Ut molestie sed tellus ut placerat. Aliquam magna nibh.
+            Donec et malesuada augue. Aenean urna orci, congue non sapien nec, venenatis auctor elit. Pellentesque lobortis eget metus non pretium. Nulla facilisi.
           </p>
           <input class="form__submit" type="submit" value="Lorem link ->" />
         </div>
+
+        <!-- Graphic section 2 -->
         <div class="graphic graphic--chr2">
-          <h2 class="product__title ">Lorem title</h2>
+          <h2 class="product__title">Lorem title</h2>
           <p class="product__p">
-            Ut molestie sed tellus ut placerat. Aliquam magna nibh.
+            Donec et malesuada augue. Aenean urna orci, congue non sapien nec, venenatis auctor elit. Pellentesque lobortis eget metus non pretium.
           </p>
           <input class="form__submit" type="submit" value="Lorem link ->" />
         </div>
       </div>
     </main>
+
+    <!-- Additional submit button -->
     <input class="form__submit" type="submit" value="Lorem link ->" />
-  <!-- section-->
-    <section>
-      <div class="section__grid">
-        <div class="section__cont">
-          <h2>Imperdiet vel vulputate duit.</h2>
-          <input class="form__submit" type="submit" value="Lorem link ->" />
-        </div>
-        <div class="img__section"><img src="./img/Characters/Two_Char3.png" alt=""></div>
-      </div>
-    </section>
-    <!-- Footer-->
+    
+<!-- Additional section -->
+<section class="section">
+  <div class="section__grid">
+    <div class="section__cont">
+      <h2>Imperdiet vel vulputate dui.</h2>
+      <input class="form__submit" type="submit" value="Lorem link ->" />
+    </div>
+    <div class="section__div">
+      <img src="./img/Characters/Two_Char3.png" class="section__img" alt="Two Characters" />
+      <p class="section__p"></p>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
     <footer class="footer">
       <p class="footer__p">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
         quas provident optio corrupti cumque magnam.
       </p>
-      <a class="footer__icon" href="#"
-        ><img
+      <a class="footer__icon" href="#">
+        <img
           class="footer__svg"
           src="./img/Icons/twitter-stroke-rounded.svg"
           alt="Twitter"
-      /></a>
-      <a class="footer__icon" href="#"
-        ><img
+        />
+      </a>
+      <a class="footer__icon" href="#">
+        <img
           class="footer__svg"
           src="./img/Icons/github-01-stroke-rounded.svg"
-          alt="Githuib"
-      /></a>
-      <a class="footer__icon" href="#"
-        ><img class="footer__svg" src="./img/Icons/instagram-stroke-rounded.svg"
-        alt=Instagram" /></a
-      >
+          alt="GitHub"
+        />
+      </a>
+      <a class="footer__icon" href="#">
+        <img
+          class="footer__svg"
+          src="./img/Icons/instagram-stroke-rounded.svg"
+          alt="Instagram"
+        />
+      </a>
     </footer>
-    <!-- End Footer-->
+    <!-- End of footer -->
   </body>
 </html>
